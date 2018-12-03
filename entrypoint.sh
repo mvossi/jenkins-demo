@@ -1,4 +1,3 @@
-DTR_IP=18.185.56.80
 openssl s_client -connect ${DTR_IP}:443 -showcerts \
   </dev/null 2>/dev/null | openssl x509 -outform PEM | sudo tee \
   /usr/local/share/ca-certificates/${DTR_IP}.crt
